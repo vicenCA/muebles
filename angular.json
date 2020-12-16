@@ -29,6 +29,7 @@
             ],
             "styles": [
               "src/styles.scss"
+              
             ],
             "scripts": []
           },
@@ -92,6 +93,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "muebles"
+    }
+  },
+  "defaultProject": "muebles",
+  "cli": {
+    "analytics": "454fe5c7-b28e-419c-9b24-c724e30b5460"
+  }
 }
