@@ -3,14 +3,14 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 /* DOCUMENTACIÓN: https://angular.io/guide/lazy-loading-ngmodules */
 const routes: Routes = [
   {
-    path: '**', redirectTo: 'customers/home', pathMatch: 'full',
-  },
-  {
     path: 'admin', loadChildren: () => import('./admin/admin.module').then((m) => m.AdminModule)
   }, // loadChildren: './admin/admin.module#AdminModule'
   {
     path: 'customers', loadChildren: () => import('./customers/customers.module').then((m) => m.CustomersModule)
-  } // loadChildren: './customers/customers.module#CustomersModule'
+  }, // loadChildren: './customers/customers.module#CustomersModule'
+  {
+    path: '**', redirectTo: 'customers/home', pathMatch: 'full',
+  }
 ];
 
 @NgModule({

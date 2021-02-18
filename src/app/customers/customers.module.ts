@@ -7,6 +7,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { CardComponent } from './components/card/card.component';
 import { FooterComponent } from "./components/footer/footer.component";
 import { CustomersComponent } from "./customers.component";
+import { CategoryComponent } from './screens/category/category.component';
 
 @NgModule({
   declarations: [ 
@@ -14,7 +15,8 @@ import { CustomersComponent } from "./customers.component";
     NavbarComponent,
     CardComponent,
     FooterComponent,
-    CustomersComponent
+    CustomersComponent,
+    CategoryComponent
   ],
   imports: [
     CommonModule,

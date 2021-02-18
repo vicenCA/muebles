@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="container text-center">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h1>{{categoria.nombre_categoria}}</h1>
+            <img src={{categoria.imagen_categoria}} class="img-fluid" alt="Steeme Inicio">
+        </div>
+    </div>
+</div>
+
+<ngb-carousel>
+    <ng-template *ngFor="let item of categorias" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="{{item.imagen_categoria}}" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>10 seconds between slides...</h3>
+        <p>This carousel uses customized default values.</p>
+      </div>
+    </ng-template>
+</ngb-carousel>
+
+<app-footer></app-footer>

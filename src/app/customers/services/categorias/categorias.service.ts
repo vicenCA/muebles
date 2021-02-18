@@ -21,4 +21,7 @@ export class CategoriasService {
     return this.categorias.filter((categoria: Categoria) => categoria.tipo_categoria == tipo_categorias);
   }
   
+  public getCategoryById(id: number): Categoria{
+    return this.categorias.find((categoria: Categoria) => categoria.id_categoria == id);
+  }
 }
